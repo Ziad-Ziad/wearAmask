@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Wear A Mask</title>
+
+</head>
+<body>
+                        <!-- THE NAVIGATION BAR SECTION-->
+    <nav class="navbar navbar-expand-md navbar-light" style="padding-top: 2%; padding-bottom: 2%; background-color: #5f0f40;">
+        <a class="navbar-brand text-uppercase" href="#" style="padding-left: 5%;"><span class="logoText">wear a mask</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon active"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="padding-left: 5%;">
+          <ul class="navbar-nav">
+                        <!-- THE FIRST NAV LINK-->                
+            <li class="nav-item active">
+              <a class="nav-link" href="#navToAbout" ><span id="navHover1" class="navLink">About</span> <span class="sr-only">(current)</span></a>
+            </li>
+                        <!-- THE SECOND NAV LINK-->                
+            <li class="nav-item active">
+              <a class="nav-link nav-hover" href="#navToChart"><span id="navHover2" class="navLink">Chart</span></a>
+            </li>
+                        <!-- THE THIRD NAV LINK-->                
+            <li class="nav-item active">
+              <a class="nav-link nav-hover" href="#navToContact"><span id="navHover3" class="navLink">Contact</span></a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+                        <!-- THE SLIDE PART (ABOUT)-->                
+    <div id="carouselExampleIndicators" class="carousel slide fullSlideBackColor" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" id="navToAbout">
+                        <!-- THE FIRST SLIDE  -->                
+          <div class="carousel-item active slideStyle">
+            <div class="d-block w-100 container">
+              <img src="./img/slideCovid.jpg" alt="covid19" class="slideImg">
+              <h4>About COVID-19:</h4>
+              <div class="nebula">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+  
+                Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
+                
+                The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. 
+                
+                The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).
+              </div>
+            </div>
+          </div>
+                        <!-- THE SECOND SLIDE  -->                
+          <div class="carousel-item slideStyle">
+            <div class="d-block w-100 container">
+              <img src="./img/slidePreventation.jpg" alt="covid19" class="slideImg">
+              <h4>Prevention:</h4>
+              <div>To prevent infection and to slow transmission of COVID-19, do the following:
+              </div>
+              <ul class="slideUl">
+                <li>Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.</li>
+                <li>Maintain at least 1 metre distance between you and people coughing or sneezing.</li>
+                <li>Avoid touching your face.</li>
+                <li>Cover your mouth and nose when coughing or sneezing.</li>
+                <li>Stay home if you feel unwell.</li>
+                <li>Refrain from smoking and other activities that weaken the lungs.</li>
+                <li>Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people.</li>
+              </ul>
+            </div>
+          </div>
+                        <!-- THE THIRD SLIDE  -->                
+          <div class="carousel-item slideStyle">
+            <div class="d-block w-100 container">
+              <img src="./img/slideSymptoms.jpg" alt="covid19" class="slideImg">
+              <h4>Symptoms:</h4>
+              <div>
+                COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.
+              </div>
+              <div>Most common symptoms:</div>
+              <ul class="slideUl">
+                <li>fever.</li>
+                <li>dry cough.</li>
+                <li>tiredness.</li>
+              </ul>
+              <div>Less common symptoms:</div>
+              <ul class="slideUl">
+                <li>aches and pains.</li>
+                <li>sore throat.</li>
+                <li>diarrhoea.</li>
+                <li>conjunctivitis.</li>
+                <li>headache.</li>
+                <li>loss of taste or smell.</li>
+                <li>a rash on skin, or discolouration of fingers or toes.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+                            <!-- THE WHOLE CHART SECTION -->                
+    <div class="stats" id="navToChart">
+        <div class="latest-report">
+                        <!-- COUNTRY NAME + COUNTRY INPUT + SEACH COUNTRY-->                
+            <div class="country">
+                        <!-- "LOADING.."  IS REPLACED BY THE COUTNRY NAME GOT FROM IP ADRESS IN JS CODE-->               
+                <div class="name change-country">Loading...</div>
+                <div class="search-country change-country hide">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Seach Country..." />
+                        <!-- ONCLICK="" EVENTLISTNER IS DONE IN THE JS CODE TO CLOSE THE COUNTRIES LIST -->                
+                        <img src="./img/close.svg" alt="close" class="close" />
+                    </div>
+                        <!-- ALL THE WORLD COUNTRY ARE VIEWED HERE VIA COUNTRIES.JS -->                
+                    <div class="country-list"></div>
+                </div>
+            </div>
+                        <!-- THE TOTAL CASES SECTION -->                            
+            <div class="total-cases">
+                <div class="title">
+                    Total Cases
+                </div>
+                <div class="value">
+                        <!-- LOADING ICON -->                
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="new-value">
+                        <!-- LOADING ICON -->                
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div> 
+                </div>
+            </div>  <br />
+                        <!-- THE RECOVERED SECTION -->                
+            <div class="recovered">
+                <div class="title">
+                    Recovered
+                </div>
+                <div class="value">
+                        <!-- LOADING ICON -->                
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="new-value">
+                        <!-- LOADING ICON -->                
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+                        <!-- THE DEATHS SECTION -->                
+            <div class="deaths">
+                <div class="title">
+                    Deaths
+                </div>
+                <div class="value">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="new-value">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+                        <!-- THE CHART SECTION -->                
+        <div class="chart">
+            <canvas id="axes_line_chart"></canvas>
+        </div>
+    </div>
+
+
+                        <!-- THE CONTACT SECTION -->                
+    <div id="navToContact" style="padding-top: 2%;">
+        <div class="container">
+                        <!--CONTACT US HEADING -->                
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Us</h2>
+            <div class="row" style="padding-top: 4%;">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <!-- CONTACT US NAME-->                                  
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name" />
+                            </div>
+                        </div>
+                        <!-- CONTACT US EMAIL-->                                  
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+                            </div>
+                        </div>
+                        <!-- THE CONTACT US PHONE -->                                  
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Phone Number" />
+                            </div>
+                        </div>
+                        <!-- THE CONTACT US MESSAGE-->                                  
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Message</label> 
+                                <textarea placeholder="Message" class="form-control" id="message" rows="5"></textarea>                       
+                            </div>
+                        </div>
+                        <!-- THE CONTACT US ATTACHMENT-->                                  
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Attach an Image:</label>
+                                <input type="file" class="form-control-file" id="img" />
+                            </div>
+                        </div>
+
+                        <br />
+                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="founder col-lg-4 col-md-4">
+                    Founded By <strong class="founderName text-uppercase">Ziad</strong>
+                </div>
+                        <!-- SOCIAL NETWORK ICONS-->                                  
+                <div class="col-lg-8 socialNetwork">
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+                        <!--  A FIXED POSTION BUTTON-->                                  
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <script src="./js/countries.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
+                        <!-- -->                                  
+<!-- important HOOVER THE NAV BAR AND CHANGE ITS COLOR TO LIGHT one-->
