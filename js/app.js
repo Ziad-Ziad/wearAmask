@@ -12,13 +12,36 @@ function scrollFunction() {
   }
 }
 
-// the fixed btnonclick event 
+// the fixed btn onclick  
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
 
+//the form submitted data
+let formSubmitted = () =>{
+
+	
+	let userName = document.getElementById("name-submitted").value;
+	let useremail = document.getElementById("email-submitted").value;
+	let userPhone = document.getElementById("phone-submitted").value;
+	let userMessage = document.getElementById("message-submitted").value;
+	
+	if(userName === '' || useremail === '' || userPhone === '' || userMessage === ''){
+		console.log('please fill in the form');
+		document.getElementById("data-submitted-status").innerHTML = `<div class="alert alert-danger" role="alert">
+		Please, fill in the form.</div>`
+	} else {
+		console.log(`The submitted name is: ${userName}`);
+		console.log(`The submitted email is: ${useremail}`);
+		console.log(`The submitted phone is: ${userPhone}`);
+		console.log(`The submitted message is: ${userMessage}`);
+		document.getElementById("data-submitted-status").innerHTML = `<div class="alert alert-success" 
+		role="alert">Thank you,</div>`
+	}
+
+}
 
 
 //get the countries and chart data classes and IDs
@@ -32,8 +55,6 @@ const new_deaths_element = document.querySelector(".deaths .new-value");
 const ctx = document.getElementById("axes_line_chart").getContext("2d"); 
 
 
-
-
 //app variables
 let app_data = [],
 	cases_list = [],
@@ -43,13 +64,8 @@ let app_data = [],
 
 
 //get the user country via his IP address
-let country_code = geoplugin_countryCode();
-let user_country;
-country_list.forEach( country => {
-    if( country.code == country_code){
-        user_country = country.name;
-    }
-});
+let user_country = geoplugin_countryName();
+console.log(`the client's country is ${user_country}`)
 
 
 // fetch data from API
