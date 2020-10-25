@@ -1,22 +1,61 @@
 
-/* FONTS */
-div, p, li, ul, h4, a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* RESPOSIVE Support Us BUTTON */ 
+@media screen and (min-width: 910px){  
+    .btn-nav {
+        color: #dcdcdc;        ;
+        position: relative;
+        right: 100px;
+        padding: 15px 30px;
+        background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        border: 0;
+        border-radius: 50px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+
+    }
+    .btn-nav:hover {
+        color: white;
+        text-decoration: none;
+
+    }
 
 }
 
-div, p, li, ul, a {
-    font-size: 20px;
+@media (min-width: 778px) and (max-width: 909px){
+    .btn-nav {
+        color: #dcdcdc;
+        position: relative;
+        padding: 15px 30px;
+        background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        border: 0;
+        border-radius: 50px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    .btn-nav:hover {
+        color: white;
+        text-decoration: none;
+
+    }
 }
+
+@media (max-width: 777px){
+    .btn-nav {
+        display: none;
+    }
+}
+
+
 
 /* FOR THE WHOLE WEBSITE */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+
 }
-
-
 
 /* THE FIXED BACK TO TOP btn */
 #myBtn {
@@ -56,6 +95,7 @@ div, p, li, ul, a {
 
 #navHover1:hover, #navHover2:hover, #navHover3:hover {
     color: white;
+    transition-duration: 1s;
 }
 
 
@@ -113,7 +153,7 @@ div, p, li, ul, a {
 
 .name{
     font-size: 2.2em;
-    color: #be64f1;
+    color: #F56505;
     font-weight: bold;
 }
 
@@ -244,22 +284,67 @@ footer {
     background-color: #0f4c5c;
     margin-top: 5%;
     width: 100%;
-    height: 135px;
+    height: 170px;
+    position: relative;
 }
 
 .founder {
-    margin-top: 30px;
-    font-size: 1.1em;
+    text-align: center;
+    font-size: 1.3em;
+    display: block;
 }
 
 .founderName {
     color: #F56505;
-}
-.socialNetwork {
-    padding-top: 20px;
+    display: inline; 
 }
 
+
+.footer-items {
+    display: inline;
+    position: absolute;
+    color: #aa4603;
+    transition-duration: 0.5s;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+
+}
+
+.footer-items:hover {
+    text-decoration: none;
+    color: #fb924b;
+}
+
+#item1 {
+    top: 60px;
+    left: 10%;
+
+}
+
+#item2 {
+    top: 60px;
+    left: 30%;
+}
+
+#item3 {
+    top: 60px;
+    right: 30%;
+}
+
+#item4 {
+    top: 60px;
+    right: 8%;
+}
+
+
+
+
 /*  THE SOCIAL NETWORKS ICONS */
+
+.display-block {
+    display: block;
+}
 
 ul.social-network {
 	list-style: none;
@@ -269,25 +354,39 @@ ul.social-network {
 }
 ul.social-network li {
 	display: inline;
-	margin: 0 5px;
 }
 .social-network a.icoRss {
-	background-color: #F56505;
+    background-color: #F56505;
+    position: absolute;
+    top: 115px;
+    left: 2.5%;
 }
 .social-network a.icoFacebook {
-	background-color:#3B5998;
+    background-color:#3B5998;
+    position: absolute;
+    top: 115px;
+    left: 20%;
+
 }
 .social-network a.icoTwitter {
-	background-color:#33ccff;
+    background-color:#33ccff;
+    position: absolute;
+    top: 115px;
+    left: 45%;
+
 }
 .social-network a.icoGoogle {
-	background-color:#BD3518;
+    background-color:#BD3518;
+    position: absolute;
+    top: 115px;
+    right: 20%;
 }
-.social-network a.icoVimeo {
-	background-color:#0590B8;
-}
+
 .social-network a.icoLinkedin {
-	background-color:#007bb7;
+    background-color:#007bb7;
+    position: absolute;
+    top: 115px;
+    right: 2.5%;
 }
 .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
@@ -335,8 +434,9 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
-/* RESPOSIVE SCREEN USING MEDIA8 */ 
 
+
+/*RESPONSIVE STATS */
 @media screen and (max-width: 1000px){
     .latest-report{
         display: flex;
