@@ -23,10 +23,11 @@ function topFunction() {
 let formSubmitted = () =>{
 
 	
-	let userName = document.getElementById("name-submitted").value;
-	let useremail = document.getElementById("email-submitted").value;
-	let userPhone = document.getElementById("phone-submitted").value;
-	let userMessage = document.getElementById("message-submitted").value;
+
+	const userName = document.getElementById("name-submitted").value;
+	const useremail = document.getElementById("email-submitted").value;
+	const userPhone = document.getElementById("phone-submitted").value;
+	const userMessage = document.getElementById("message-submitted").value;
 	
 	if(userName === '' || useremail === '' || userPhone === '' || userMessage === ''){
 		console.log('please fill in the form');
@@ -38,7 +39,16 @@ let formSubmitted = () =>{
 		console.log(`The submitted phone is: ${userPhone}`);
 		console.log(`The submitted message is: ${userMessage}`);
 		document.getElementById("data-submitted-status").innerHTML = `<div class="alert alert-success" 
-		role="alert">Thank you,</div>`
+		role="alert">Thank you,</div>`;
+		clearForm();
+		
+	}
+
+	function clearForm(){
+		document.querySelector("#name-submitted").value = ""
+		document.querySelector("#email-submitted").value = ""
+		document.querySelector("#phone-submitted").value = ""
+		document.querySelector("#message-submitted").value = ""
 	}
 
 }
