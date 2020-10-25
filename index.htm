@@ -32,7 +32,12 @@
               <a class="nav-link nav-hover" href="#navToContact"><span id="navHover3" class="navLink">Contact</span></a>
             </li>
           </ul>
+          <li class="nav-item ">
+             <!--<a class="nav-link nav-hover btn-nav" href="#navToContact"><span id="navHover3" class="navLink">Contact</span></a>-->          </li>
         </div>
+                        <!-- THE SUPPORT US BUTTON -->                
+        <a href="https://www.patreon.com/" target="/blank" class="btn-nav">Support Us</a>
+
     </nav>
 
 
@@ -202,32 +207,33 @@
             <div class="row" style="padding-top: 4%;">
                 <div class="col-lg-8 mx-auto">
                     <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <div id="data-submitted-status"></div>
                         <!-- CONTACT US NAME-->                                  
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Name" />
+                                <input type="text" class="form-control" id="name-submitted" placeholder="Name" />
                             </div>
                         </div>
                         <!-- CONTACT US EMAIL-->                                  
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Email Address</label>
-                                <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+                                <input type="email" class="form-control" id="email-submitted" placeholder="name@example.com" />
                             </div>
                         </div>
                         <!-- THE CONTACT US PHONE -->                                  
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Phone Number</label>
-                                <input type="tel" class="form-control" id="phone" placeholder="Phone Number" />
+                                <input type="tel" class="form-control" id="phone-submitted" placeholder="Phone Number" />
                             </div>
                         </div>
                         <!-- THE CONTACT US MESSAGE-->                                  
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Message</label> 
-                                <textarea placeholder="Message" class="form-control" id="message" rows="5"></textarea>                       
+                                <textarea placeholder="Message" class="form-control" id="message-submitted" rows="5"></textarea>                       
                             </div>
                         </div>
                         <!-- THE CONTACT US ATTACHMENT-->                                  
@@ -239,30 +245,36 @@
                         </div>
 
                         <br />
-                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                        <div class="form-group"><button class="btn btn-primary btn-xl" onclick="formSubmitted()" id="sendMessageButton" type="submit">Send</button></div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
+
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="founder col-lg-4 col-md-4">
-                    Founded By <strong class="founderName text-uppercase">Ziad</strong>
-                </div>
+                        <!-- FOUNDER NAME SECTION-->                                  
+        <div class="founder">
+            Founded By <strong class="founderName founder">Ziad</strong>
+        </div>
+                        <!--FOOTER ITEMS-->                                           
+        <div>
+            <a href="#" class="footer-items" id="item1">Terms</a>
+            <a href="#" class="footer-items" id="item2">Privacy</a>
+            <a href="#" class="footer-items" id="item3">Blog</a>
+            <a href="#" class="footer-items" id="item4">Help</a>
+        </div>
+
                         <!-- SOCIAL NETWORK ICONS-->                                  
-                <div class="col-lg-8 socialNetwork">
-                    <ul class="social-network social-circle">
-                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="socialNetwork">
+            <ul class="social-network social-circle">
+                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
         </div>
     </footer>
 
