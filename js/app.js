@@ -33,22 +33,32 @@ let formSubmitted = () =>{
 		console.log('please fill in the form');
 		document.getElementById("data-submitted-status").innerHTML = `<div class="alert alert-danger" role="alert">
 		Please, fill in the form.</div>`
+		removeAlert();
+
 	} else {
 		console.log(`The submitted name is: ${userName}`);
 		console.log(`The submitted email is: ${useremail}`);
 		console.log(`The submitted phone is: ${userPhone}`);
 		console.log(`The submitted message is: ${userMessage}`);
+
 		document.getElementById("data-submitted-status").innerHTML = `<div class="alert alert-success" 
 		role="alert">Thank you,</div>`;
+		removeAlert();
 		clearForm();
 		
 	}
 
+	//clear the labels after submatting the form
 	function clearForm(){
-		document.querySelector("#name-submitted").value = ""
-		document.querySelector("#email-submitted").value = ""
-		document.querySelector("#phone-submitted").value = ""
-		document.querySelector("#message-submitted").value = ""
+		document.querySelector("#name-submitted").value = "";
+		document.querySelector("#email-submitted").value = "";
+		document.querySelector("#phone-submitted").value = "";
+		document.querySelector("#message-submitted").value = "";
+	}
+
+	//remove the alert message after specific amount of time
+	function removeAlert() {
+		setTimeout(()=> document.querySelector('.alert').remove(),2500);
 	}
 
 }
